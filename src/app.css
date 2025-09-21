@@ -1,0 +1,22 @@
+/* #RefactorExamplesComponentsAndStyles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50;
+    color-scheme: light;
+    text-rendering: optimizelegibility;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  * {
+    @apply outline-transparent;
+  }
+
+  *:focus {
+    outline: none;
+  }
+}
